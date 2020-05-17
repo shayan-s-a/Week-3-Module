@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #61133e;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #000000;
+  border-radius: 0;
+  border: 0;
+  padding-bottom: 20px;
+}
+
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: purple;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+/********* Menu ******************/
+
+.navbar-header2 h2
+{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.menu-tile{
+  border: 2px solid #f5f5f5;
+  background-color: blue;
+  margin-bottom: 2em;
+}
+.menu-tile p{
+  background-color: blue;
+  margin-left: 1.7em;
+  margin-right: 1.7em;
+  font-size: 1.5em;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 7vw; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+}
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+
+  .navbar-header2 h2
+  {
+    font-size: 5vw;
+  }
+
+  .menu-tile{
+    font-size: 4vw;
+  }
+
+}
